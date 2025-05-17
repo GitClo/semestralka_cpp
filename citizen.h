@@ -11,7 +11,8 @@ class Citizen {
     std::string birt_number;
     std::string address;
 
-    LinkedList<Plot> plots; // zoznam pozemkov, ktoré občan vlastní
+    // zoznam pozemkov, ktoré občan vlastní
+    LinkedList<Plot> plots;
 
     public:
     Citizen(int const & id, std::string const & first_name, std::string const & last_name,
@@ -30,6 +31,15 @@ class Citizen {
     std::string get_last_name() const {return this->last_name;}
     std::string get_birt_number() const {return this->birt_number;}
     std::string get_address() const {return this->address;}
+
+    // Aktualizacia osobnych udajov obcana
+    void update_info(std::string const & first_name, std::string const & last_name,
+                     std::string const & birth_number, std::string const & address) {
+        this->first_name = first_name;
+        this->last_name = last_name;
+        this->birt_number = birth_number;
+        this->address = address;
+    }
 
     // Manipulacia s pozemkami
 

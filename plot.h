@@ -23,6 +23,15 @@ class Plot {
             return land_area * get_tax_rate();
         }
 
+        //Settery
+        void set_land_area(double new_land_area) {
+                if (new_land_area > 0) {
+                    this->land_area = new_land_area;
+                } else {
+                    std::cerr << "CHYBA: Plocha pozemku musi byt kladne cislo.\n";
+                }
+            }
+
 };
 
 class PLOT_Orna_poda : public Plot {

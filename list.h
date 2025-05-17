@@ -37,9 +37,9 @@ public:
             std::cerr << "CHYBA: Pridavana hodnota je null.\n";
             return;
         }
-        auto newNode = std::make_shared<ListNode<T>>(value);
-        newNode->set_next(head);
-        head = newNode;
+        auto new_node = std::make_shared<ListNode<T>>(value);
+        new_node->set_next(head);
+        head = new_node;
     }
 
     // vymaze prvy prvok v zozname, stary uzol zanikne vdaka shared_ptr
@@ -130,9 +130,9 @@ public:
             return;
         }
 
-        auto newNode = std::make_shared<ListNode<T>>(value);
-        newNode->set_next(current->get_next());
-        current->set_next(newNode);
+        auto new_node = std::make_shared<ListNode<T>>(value);
+        new_node->set_next(current->get_next());
+        current->set_next(new_node);
     }
 
     // vlozi novy node za dany node, ak node neexistuje, vypise chybu
@@ -145,9 +145,9 @@ public:
             std::cerr << "CHYBA: Pridavana insert hodnota je null.\n";
             return;
         }
-        auto newNode = std::make_shared<ListNode<T>>(value);
-        newNode->set_next(node->get_next());
-        node->set_next(newNode);
+        auto new_node = std::make_shared<ListNode<T>>(value);
+        new_node->set_next(node->get_next());
+        node->set_next(new_node);
     }
 
     // vypise cely zoznam pomocou get_id(), predpoklada sa ze typ T ma metodu get_id()

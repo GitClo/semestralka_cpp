@@ -11,7 +11,7 @@ class Plot {
         [[nodiscard]] virtual bool is_building_land() const { return false; }
 
     public:
-        Plot(int id, double land_area);
+        Plot(int id, double land_area) : id(id), land_area(land_area) {};
         virtual ~Plot() = default;
 
         [[nodiscard]] int get_id() const {return this->id;}

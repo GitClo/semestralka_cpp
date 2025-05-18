@@ -8,7 +8,7 @@ class Citizen {
     int id;
     std::string first_name;
     std::string last_name;
-    std::string birt_number;
+    std::string birth_number;
     std::string address;
 
     // zoznam pozemkov, ktoré občan vlastní
@@ -20,7 +20,7 @@ class Citizen {
         id(id),
         first_name(first_name),
         last_name(last_name),
-        birt_number(birt_number),
+        birth_number(birt_number),
         address(address){};
 
     ~Citizen() = default;
@@ -29,7 +29,7 @@ class Citizen {
     int get_id() const {return this->id;}
     std::string get_first_name() const {return this->first_name;}
     std::string get_last_name() const {return this->last_name;}
-    std::string get_birt_number() const {return this->birt_number;}
+    std::string get_birth_number() const {return this->birth_number;}
     std::string get_address() const {return this->address;}
 
     // Aktualizacia osobnych udajov obcana
@@ -37,7 +37,7 @@ class Citizen {
                      std::string const & birth_number, std::string const & address) {
         this->first_name = first_name;
         this->last_name = last_name;
-        this->birt_number = birth_number;
+        this->birth_number = birth_number;
         this->address = address;
     }
 

@@ -3,9 +3,6 @@
 #include <string>
 #include <limits>
 
-//#include "include/json.hpp"
-//using json = nlohmann::json;
-
 #include "list.h"
 #include "plot.h"
 #include "citizen.h"

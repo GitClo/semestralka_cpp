@@ -168,7 +168,7 @@ void view_citizens() {
         std::cout << "ID: " << citizen->get_id()
                   << ", Meno: " << citizen->get_first_name()
                   << ", Priezvisko: " << citizen->get_last_name()
-                  << ", Rodne cislo: " << citizen->get_birt_number()
+                  << ", Rodne cislo: " << citizen->get_birth_number()
                   << ", Adresa: " << citizen->get_address() << "\n";
         current = current->get_next();
     }
@@ -198,7 +198,7 @@ void find_citizen() {
         std::cout << "ID: " << citizen->get_id()
                   << ", Meno: " << citizen->get_first_name()
                   << ", Priezvisko: " << citizen->get_last_name()
-                  << ", Rodne cislo: " << citizen->get_birt_number()
+                  << ", Rodne cislo: " << citizen->get_birth_number()
                   << ", Adresa: " << citizen->get_address() << "\n";
     } else {
         std::cout << "Obcan s ID " << id << " nebol najdeny.\n";
@@ -221,7 +221,7 @@ void update_citizen() {
     std::cout << "Aktualne udaje:\n";
     std::cout << "Meno: " << citizen->get_first_name() << "\n";
     std::cout << "Priezvisko: " << citizen->get_last_name() << "\n";
-    std::cout << "Rodne cislo: " << citizen->get_birt_number() << "\n";
+    std::cout << "Rodne cislo: " << citizen->get_birth_number() << "\n";
     std::cout << "Adresa: " << citizen->get_address() << "\n";
 
     std::cout << "\nZadajte nove udaje (prazdny vstup pre ponechanie povodnej hodnoty):\n";
@@ -236,7 +236,7 @@ void update_citizen() {
 
     std::cout << "Nove rodne cislo: ";
     std::getline(std::cin, birth_number);
-    if (birth_number.empty()) birth_number = citizen->get_birt_number();
+    if (birth_number.empty()) birth_number = citizen->get_birth_number();
 
     std::cout << "Nova adresa: ";
     std::getline(std::cin, address);

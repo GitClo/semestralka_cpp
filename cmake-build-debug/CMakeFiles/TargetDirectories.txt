@@ -1,3 +1,0 @@
-C:/Users/matej/CLionProjects/semestralka_cpp/cmake-build-debug/CMakeFiles/semestralka_cpp.dir
-C:/Users/matej/CLionProjects/semestralka_cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/matej/CLionProjects/semestralka_cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
